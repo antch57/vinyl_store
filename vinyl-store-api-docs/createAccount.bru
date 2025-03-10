@@ -1,0 +1,19 @@
+meta {
+  name: createAccount
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/account
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "first_name": "ant",
+    "last_name": "chi",
+    "email": "hello@gmail.com"
+  }
+}
